@@ -47,7 +47,7 @@
             Home
           </router-link>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-cy="nav-new-article">
           <router-link
             class="nav-link"
             active-class="active"
@@ -59,7 +59,7 @@
             <i class="ion-compose"></i>&nbsp;New Article
           </router-link>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-cy="nav-settings">
           <router-link
             class="nav-link"
             active-class="active"
