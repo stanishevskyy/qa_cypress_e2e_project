@@ -4,47 +4,47 @@ class SettingsPageObject extends PageObject {
   url = '/#/settings';
 
   get emailField() {
-    return cy.getByDataCy('email-sign-in');
+    return cy.getByDataQa('email-sign-in');
   }
 
   get passwordField() {
-    return cy.getByDataCy('password-sign-in');
+    return cy.getByDataQa('password-sign-in');
   }
 
   get signInBtn() {
-    return cy.getByDataCy('sign-in-btn');
+    return cy.getByDataQa('sign-in-btn');
   }
 
   get navSettingsBtn() {
-    return cy.getByDataCy('nav-settings');
+    return cy.getByDataQa('nav-settings');
   }
 
   get userSettingsTitle() {
-    return cy.getByDataCy('user-settings-title');
+    return cy.getByDataQa('user-settings-title');
   }
 
   get userNameField() {
-    return cy.getByDataCy('user-username');
+    return cy.getByDataQa('user-username');
   }
 
   get userBioField() {
-    return cy.getByDataCy('user-bio');
+    return cy.getByDataQa('user-bio');
   }
 
   get userEmailField() {
-    return cy.getByDataCy('user-email');
+    return cy.getByDataQa('user-email');
   }
 
   get userPasswordField() {
-    return cy.getByDataCy('user-password');
+    return cy.getByDataQa('user-password');
   }
 
   get userUpdateButton() {
-    return cy.getByDataCy('user-btn-update');
+    return cy.getByDataQa('user-btn-update');
   }
 
   get userLogoutBtn() {
-    return cy.getByDataCy('user-btn-logout');
+    return cy.getByDataQa('user-btn-logout');
   }
 
   get updatedMessage() {

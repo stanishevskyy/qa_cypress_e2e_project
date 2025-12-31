@@ -9,6 +9,8 @@ describe('Sign Up page', () => {
   let user;
 
   beforeEach(() => {
+    cy.task('db:clear');
+
     signUpPage.visit();
 
     cy.task('generateUser').then((generatedUser) => {

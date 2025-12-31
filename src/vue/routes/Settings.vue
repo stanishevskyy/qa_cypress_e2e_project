@@ -3,7 +3,7 @@
     <div class="container page">
       <div class="row">
         <div class="col-md-6 offset-md-3 col-xs-12">
-          <h1 class="text-xs-center" data-cy="user-settings-title">Your Settings</h1>
+          <h1 class="text-xs-center" data-qa="user-settings-title">Your Settings</h1>
           <form @submit.prevent="updateSettings()">
             <fieldset>
               <fieldset class="form-group">
@@ -20,7 +20,7 @@
                   type="text"
                   v-model="user.username"
                   placeholder="Your username"
-                  data-cy='user-username'
+                  data-qa='user-username'
                 />
               </fieldset>
               <fieldset class="form-group">
@@ -29,7 +29,7 @@
                   rows="8"
                   v-model="user.bio"
                   placeholder="Short bio about you"
-                  data-cy='user-bio'
+                  data-qa='user-bio'
                 ></textarea>
               </fieldset>
               <fieldset class="form-group">
@@ -38,7 +38,7 @@
                   type="text"
                   v-model="user.email"
                   placeholder="Email"
-                  data-cy='user-email'
+                  data-qa='user-email'
                 />
               </fieldset>
               <fieldset class="form-group">
@@ -47,17 +47,17 @@
                   type="password"
                   v-model="user.password"
                   placeholder="Password"
-                  data-cy='user-password'
+                  data-qa='user-password'
                 />
               </fieldset>
-              <button class="btn btn-lg btn-primary pull-xs-right" data-cy="user-btn-update">
+              <button class="btn btn-lg btn-primary pull-xs-right" data-qa="user-btn-update">
                 Update Settings
               </button>
             </fieldset>
           </form>
           <!-- Line break for logout button -->
           <hr />
-          <button @click="logout" class="btn btn-outline-danger" data-cy="user-btn-logout">
+          <button @click="logout" class="btn btn-outline-danger" data-qa="user-btn-logout">
             Or click here to logout.
           </button>
         </div>

@@ -42,7 +42,7 @@ describe('Settings page', () => {
   });
 
   it('should provide an ability to update an email', () => {
-    const newUserEmail = `test${1245}@mail.com`;
+    const newUserEmail = faker.internet.email();
 
     settingsPage.updateField(settingsPage.userEmailField, newUserEmail);
     settingsPage.updatedMessage.should('have.text', 'Update successful!');
@@ -50,7 +50,7 @@ describe('Settings page', () => {
   });
 
   it('should provide an ability to update password', () => {
-    const newUserPassword = '12345Qwert!12345';
+    const newUserPassword = faker.internet.password();
 
     settingsPage.updateField(settingsPage.userPasswordField, newUserPassword);
     settingsPage.updatedMessage.should('have.text', 'Update successful!');

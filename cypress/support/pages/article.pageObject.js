@@ -4,51 +4,51 @@ class ArticlePageObject extends PageObject {
   url = '/#/login';
 
   get emailField() {
-    return cy.getByDataCy('email-sign-in');
+    return cy.getByDataQa('email-sign-in');
   }
 
   get passwordField() {
-    return cy.getByDataCy('password-sign-in');
+    return cy.getByDataQa('password-sign-in');
   }
 
   get signInBtn() {
-    return cy.getByDataCy('sign-in-btn');
+    return cy.getByDataQa('sign-in-btn');
   }
 
   get navNewArticle() {
-    return cy.getByDataCy('nav-new-article');
+    return cy.getByDataQa('nav-new-article');
   }
 
   get articleTitle() {
-    return cy.getByDataCy('article-title-text');
+    return cy.getByDataQa('article-title-text');
   }
 
   get articleBio() {
-    return cy.getByDataCy('article-bio-text');
+    return cy.getByDataQa('article-bio-text');
   }
 
   get articleBody() {
-    return cy.getByDataCy('article-body-text');
+    return cy.getByDataQa('article-body-text');
   }
 
   get articleTag() {
-    return cy.getByDataCy('article-tag-item');
+    return cy.getByDataQa('article-tag-item');
   }
 
   get articlePublishBtn() {
-    return cy.getByDataCy('article-publish-btn');
+    return cy.getByDataQa('article-publish-btn');
   }
 
   get createdArticleTitle() {
-    return cy.getByDataCy('article-h1-title');
+    return cy.getByDataQa('article-h1-title');
   }
 
   get articleEditorBtn() {
-    return cy.getByDataCy('article-editor-btn');
+    return cy.getByDataQa('article-editor-btn');
   }
 
   get articleDeleteBtn() {
-    return cy.getByDataCy('article-delete-btn');
+    return cy.getByDataQa('article-delete-btn');
   }
 
   login(email, password) {

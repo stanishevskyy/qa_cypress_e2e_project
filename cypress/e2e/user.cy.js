@@ -51,4 +51,17 @@ describe('User', () => {
 
     userPage.assertFollowingText(`Follow ${secondUser.username}`);
   });
+
+  it('should be able to unfollow the another user', () => {
+    userPage.login(firstUser.email, firstUser.password);
+
+    cy.url().should('not.include', '/login');
+
+    userPage.visit(`/#/@${secondUser.username}`);
+
+    userPage.unfollowBtn
+      .should('exist').and('be.visible').and('contain.text', 'Follow').click();
+
+    userPage.assertFollowingText(`Unfollow ${secondUser.username}`);
+  });
 });
