@@ -59,6 +59,9 @@ describe('User', () => {
 
     userPage.visit(`/#/@${secondUser.username}`);
 
+    userPage.followBtn
+      .should('exist').and('be.visible').and('contain.text', 'Follow').click();
+
     userPage.unfollowBtn
       .should('exist').and('be.visible').and('contain.text', 'Follow').click();
 
